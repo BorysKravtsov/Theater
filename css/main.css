@@ -7,12 +7,12 @@
 
 @font-face {
   font-family: "condensed";
-  src: url("/fonts/OpenSansCondensed-Bold.woff") format("woff");
+  src: url("..fonts/OpenSansCondensed-Bold.woff") format("woff");
   /* Дополнительные параметры, если необходимо */
 }
 @font-face {
   font-family: "regular";
-  src: url("/fonts/OpenSans-Regular.woff2") format("woff2");
+  src: url("..fonts/OpenSans-Regular.woff2") format("woff2");
   /* Дополнительные параметры, если необходимо */
 }
 body {
@@ -167,7 +167,7 @@ button {
 }
 
 .home-page {
-  background-image: url(/images/home-page-bg.jpg);
+  background-image: url("..images/home-page-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -373,19 +373,19 @@ button {
 }
 
 .slide1 {
-  background-image: url(/images/slides/slide1.jpg);
+  background-image: url("..images/slides/slide1.jpg");
 }
 
 .slide2 {
-  background-image: url(/images/slides/slide2.jpg);
+  background-image: url("..images/slides/slide2.jpg");
 }
 
 .slide3 {
-  background-image: url(/images/slides/slide3.jpg);
+  background-image: url("..images/slides/slide3.jpg");
 }
 
 .slide4 {
-  background-image: url(/images/slides/slide4.jpg);
+  background-image: url("..images/slides/slide4.jpg");
 }
 
 .slide__title {

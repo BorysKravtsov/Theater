@@ -1,11 +1,11 @@
 @charset "UTF-8";
 @font-face {
   font-family: "condensed";
-  src: url("/fonts/OpenSansCondensed-Bold.woff") format("woff");
+  src: url("..fonts/OpenSansCondensed-Bold.woff") format("woff");
   /* Дополнительные параметры, если необходимо */
 }
 @font-face {
   font-family: "regular";
-  src: url("/fonts/OpenSans-Regular.woff2") format("woff2");
+  src: url("..fonts/OpenSans-Regular.woff2") format("woff2");
   /* Дополнительные параметры, если необходимо */
 }/*# sourceMappingURL=mixins.css.map */
