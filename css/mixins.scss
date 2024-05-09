@@ -1,0 +1,40 @@
+@font-face {
+    font-family: "condensed";
+    src: url('/fonts/OpenSansCondensed-Bold.woff') format('woff');
+    /* Дополнительные параметры, если необходимо */
+}
+@font-face {
+    font-family: "regular";
+    src: url('/fonts/OpenSans-Regular.woff2') format('woff2');
+    /* Дополнительные параметры, если необходимо */
+}
+@mixin font-cond($fontSize:18px, $color: #fff){
+    font-family: "condensed", sans-serif;
+    color: $color;
+    font-size: $fontSize;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+@mixin font-reg($fontSize:14px, $color: #fff){
+    font-family: "regular", sans-serif;
+    color: $color;
+    font-size: $fontSize;
+    text-transform: none;
+    letter-spacing: 0.05em;
+    line-height: 150%;
+}
+@mixin mq($breakpoint) {
+    @if map-has-key($breakpoints, $breakpoint) {
+      @media (min-width: #{map-get($breakpoints, $breakpoint)}) {
+        @content;
+      }
+    }
+}
+
+@mixin flex($jc:center, $ai:center, $fd:row)
+{
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+    flex-direction: $fd;
+}
