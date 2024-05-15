@@ -166,7 +166,7 @@ button {
 }
 
 .home-page {
-  background-image: url("/images/home-page-bg.jpg");
+  background-image: url("..images/home-page-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
