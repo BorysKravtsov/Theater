@@ -138,7 +138,7 @@ button {
 }
 
 .home-page {
-  background-image: url('..images/home-page-bg.jpg');
+  background-image: url("../images/home-page-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -323,7 +323,7 @@ button {
     width: 100px;
     height: 100px;
     transform: translate(-50%, -50%) scale(0);
-    background-image: url("/images/find-icon.svg");
+    background-image: url("../images/find-icon.svg");
     background-size: cover;
     transition: transform 0.5s ease;
     z-index: 2;
@@ -349,25 +349,25 @@ button {
 
 .nutcracker {
   .background {
-    background-image: url("/images/slides/slide1.jpg");
+    background-image: url("../images/slides/slide1.jpg");
   }
 }
 
 .king-lear {
   .background {
-    background-image: url("/images/slides/slide2.jpg");
+    background-image: url("../images/slides/slide2.jpg");
   }
 }
 
 .cinderella {
   .background {
-    background-image: url("/images/slides/slide3.jpg");
+    background-image: url("../images/slides/slide3.jpg");
   }
 }
 
 .snow-queen {
   .background {
-    background-image: url("/images/slides/slide4.jpg");
+    background-image: url("../images/slides/slide4.jpg");
   }
 }
 
@@ -422,7 +422,7 @@ button {
   }
 
   &__bg {
-    background-image: url(/images/best-year-bg.jpg);
+    background-image: url("../images/best-year-bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

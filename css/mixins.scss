@@ -1,64 +1,58 @@
 @font-face {
-    font-family: "condensed";
-    src: url('/fonts/OpenSansCondensed-Bold.woff') format('woff');
-    
+  font-family: "condensed";
+  src: url("../fonts/OpenSansCondensed-Bold.woff") format("woff");
 }
 
 @font-face {
-    font-family: "regular";
-    src: url('/fonts/OpenSans-Regular.woff2') format('woff2');
-    
+  font-family: "regular";
+  src: url("../fonts/OpenSans-Regular.woff2") format("woff2");
 }
 
 @font-face {
-    font-family: "bold";
-    src: url('/fonts/OpenSans-Bold.woff2') format('woff2');
-    
+  font-family: "bold";
+  src: url("../fonts/OpenSans-Bold.woff2") format("woff2");
 }
 @font-face {
-    font-family: "semi-bold";
-    src: url('/fonts/OpenSans-SemiBold.woff2') format('woff2');
-    
+  font-family: "semi-bold";
+  src: url("../fonts/OpenSans-SemiBold.woff2") format("woff2");
 }
 
-@mixin font-cond($fontSize:18px, $color: #fff){
-    font-family: "condensed", sans-serif;
-    color: $color;
-    font-size: $fontSize;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
+@mixin font-cond($fontSize: 18px, $color: #fff) {
+  font-family: "condensed", sans-serif;
+  color: $color;
+  font-size: $fontSize;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
 
-@mixin font-reg($fontSize:14px, $color: #fff){
-    font-family: "regular", sans-serif;
-    color: $color;
-    font-size: $fontSize;
-    text-transform: none;
-    letter-spacing: 0.05em;
-    line-height: 150%;
+@mixin font-reg($fontSize: 14px, $color: #fff) {
+  font-family: "regular", sans-serif;
+  color: $color;
+  font-size: $fontSize;
+  text-transform: none;
+  letter-spacing: 0.05em;
+  line-height: 150%;
 }
-@mixin font-semi($fontSize:12px, $color: #fff){
-    font-family: "semi-bold";
-    color: $color;
-    font-size: $fontSize;
-    text-transform: none;
-    line-height: 150%;
-}
-
-@mixin font-bold($fontSize:36px, $color: #fff){
-    font-family: "bold", sans-serif;
-    color: $color;
-    font-size: $fontSize;
-    text-transform: none;
-    letter-spacing: 0;
-    line-height: 150%;
+@mixin font-semi($fontSize: 12px, $color: #fff) {
+  font-family: "semi-bold";
+  color: $color;
+  font-size: $fontSize;
+  text-transform: none;
+  line-height: 150%;
 }
 
+@mixin font-bold($fontSize: 36px, $color: #fff) {
+  font-family: "bold", sans-serif;
+  color: $color;
+  font-size: $fontSize;
+  text-transform: none;
+  letter-spacing: 0;
+  line-height: 150%;
+}
 
-@mixin flex($jc:center, $ai:center, $fd:row)
-{
-    display: flex;
-    justify-content: $jc;
-    align-items: $ai;
-    flex-direction: $fd;
+@mixin flex($jc: center, $ai: center, $fd: row) {
+  display: flex;
+  justify-content: $jc;
+  align-items: $ai;
+  flex-direction: $fd;
 }

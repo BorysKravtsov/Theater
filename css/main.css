@@ -6,19 +6,19 @@
 
 @font-face {
   font-family: "condensed";
-  src: url("/fonts/OpenSansCondensed-Bold.woff") format("woff");
+  src: url("../fonts/OpenSansCondensed-Bold.woff") format("woff");
 }
 @font-face {
   font-family: "regular";
-  src: url("/fonts/OpenSans-Regular.woff2") format("woff2");
+  src: url("../fonts/OpenSans-Regular.woff2") format("woff2");
 }
 @font-face {
   font-family: "bold";
-  src: url("/fonts/OpenSans-Bold.woff2") format("woff2");
+  src: url("../fonts/OpenSans-Bold.woff2") format("woff2");
 }
 @font-face {
   font-family: "semi-bold";
-  src: url("/fonts/OpenSans-SemiBold.woff2") format("woff2");
+  src: url("../fonts/OpenSans-SemiBold.woff2") format("woff2");
 }
 body {
   overflow-x: hidden;
@@ -166,7 +166,7 @@ button {
 }
 
 .home-page {
-  background-image: url('..images/home-page-bg.jpg');
+  background-image: url("../images/home-page-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -393,7 +393,7 @@ button {
   width: 100px;
   height: 100px;
   transform: translate(-50%, -50%) scale(0);
-  background-image: url("/images/find-icon.svg");
+  background-image: url("../images/find-icon.svg");
   background-size: cover;
   transition: transform 0.5s ease;
   z-index: 2;
@@ -418,19 +418,19 @@ button {
 }
 
 .nutcracker .background {
-  background-image: url("/images/slides/slide1.jpg");
+  background-image: url("../images/slides/slide1.jpg");
 }
 
 .king-lear .background {
-  background-image: url("/images/slides/slide2.jpg");
+  background-image: url("../images/slides/slide2.jpg");
 }
 
 .cinderella .background {
-  background-image: url("/images/slides/slide3.jpg");
+  background-image: url("../images/slides/slide3.jpg");
 }
 
 .snow-queen .background {
-  background-image: url("/images/slides/slide4.jpg");
+  background-image: url("../images/slides/slide4.jpg");
 }
 
 .background {
@@ -486,7 +486,7 @@ button {
   line-height: 136%;
 }
 .best-year__bg {
-  background-image: url(/images/best-year-bg.jpg);
+  background-image: url("../images/best-year-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
