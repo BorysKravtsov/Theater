@@ -1,11 +1,16 @@
-@charset "UTF-8";
 @font-face {
   font-family: "condensed";
-  src: url("..fonts/OpenSansCondensed-Bold.woff") format("woff");
-  /* Дополнительные параметры, если необходимо */
+  src: url("/fonts/OpenSansCondensed-Bold.woff") format("woff");
 }
 @font-face {
   font-family: "regular";
-  src: url("..fonts/OpenSans-Regular.woff2") format("woff2");
-  /* Дополнительные параметры, если необходимо */
+  src: url("/fonts/OpenSans-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "bold";
+  src: url("/fonts/OpenSans-Bold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "semi-bold";
+  src: url("/fonts/OpenSans-SemiBold.woff2") format("woff2");
 }/*# sourceMappingURL=mixins.css.map */

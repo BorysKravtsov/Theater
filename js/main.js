@@ -12,6 +12,23 @@ const swiper = new Swiper('.swiper', {
         prevEl: '.swiper-button-prev',
       },
   });
+  const swiperP = new Swiper('.swiperP-container', {
+    parallax:true,
+    centeredSlides: false,
+    slidesPerView: 1.64,
+    loop: true,
+    mousewheel: {
+        invert: true,
+      },
+    
+  });
+  const swiperLogos = new Swiper('.swiperLogos', {
+    slidesPerView: 'auto',
+    spaceBetween: 30,
+    loop: true,
+    autoplay: true,
+});
+
   
 
 document.querySelector('.hamburger').addEventListener('click', function() {
@@ -19,6 +36,6 @@ document.querySelector('.hamburger').addEventListener('click', function() {
 });
 
 
-document.querySelector('.close-menu').addEventListener('click', function() {
+document.querySelector('.menu__close').addEventListener('click', function() {
     document.querySelector('.menu').classList.remove('menu-active'); 
 });
