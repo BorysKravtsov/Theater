@@ -1,0 +1,35 @@
+.partners {
+  &__logos {
+    margin: 0 auto;
+    @include flex(space-between, center);
+    flex-wrap: wrap;
+    align-content: space-between;
+    min-height: 209px;
+    margin-top: 156px;
+  }
+  .swiperLogos {
+    display: none;
+    max-width: 690px;
+    overflow: hidden;
+    position: relative;
+  }
+  .swiper-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .swiper-slide {
+    max-width: 256px;
+    height: auto;
+  }
+  .first-row,
+  .second-row {
+    margin: 0;
+  }
+  .first-row {
+    margin-top: 155px;
+  }
+  .second-row {
+    margin-top: 100px;
+  }
+}

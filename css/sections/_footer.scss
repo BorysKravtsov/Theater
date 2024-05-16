@@ -1,0 +1,106 @@
+.footer {
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  textarea:-webkit-autofill,
+  textarea:-webkit-autofill:hover,
+  textarea:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0 30px #444444 inset !important;
+    -webkit-text-fill-color: $color-font-grey !important;
+  }
+
+  p {
+    @include font-semi(12px, $color-font-grey);
+    letter-spacing: 0;
+    line-height: 18px;
+    max-width: 420px;
+    margin-top: 40px;
+  }
+
+  &__info-mobile {
+    display: none;
+  }
+  &__container {
+    @include flex(space-between, flex-start);
+    height: 190px;
+    margin-top: 80px;
+  }
+
+  &__info {
+    @include flex(space-between, flex-start, column);
+    @include font-cond(16px);
+    letter-spacing: 0.05em;
+    min-width: 336px;
+    .website {
+      text-decoration: underline;
+    }
+    a:not(:first-child) {
+      margin-top: 30px;
+    }
+  }
+
+  &__data {
+    @include flex(space-between, flex-start, column);
+    max-width: 390px;
+    flex-wrap: wrap;
+
+    form {
+      height: 100%;
+      @include flex(space-between, flex-end);
+      flex-wrap: wrap;
+    }
+
+    input {
+      outline: none;
+      min-width: 180px;
+      height: 35px;
+      background-color: #444444;
+      border: solid 1px #616161;
+      @include font-reg(12px, $color-font-grey);
+      padding-left: 15px;
+    }
+
+    input:not(:nth-last-of-type(n + 3)) {
+      margin-top: 30px;
+    }
+  }
+
+  &__message {
+    height: 100%;
+
+    form {
+      height: 100%;
+      @include flex(space-between, flex-end, column);
+    }
+
+    textarea {
+      min-width: 310px;
+      height: 100px;
+      background-color: #444444;
+      border: solid 1px #616161;
+      @include font-reg(12px, $color-font-grey);
+      padding-left: 15px;
+      resize: none;
+      outline: none;
+    }
+  }
+  &__attachment-mobile {
+    display: none;
+  }
+}
+.footer-bottom {
+  margin-top: 80px;
+  margin-bottom: 30px;
+  hr {
+    margin-bottom: 30px;
+    border: solid 1px #565656;
+  }
+
+  &__inner {
+    @include flex(space-between, center);
+
+    p {
+      @include font-reg(12px, $color-font-grey);
+    }
+  }
+}

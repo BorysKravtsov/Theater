@@ -1,0 +1,57 @@
+@media (max-width: 1040px) {
+  .title {
+    @include font-cond(46px);
+  }
+  .container {
+    padding: 0 20px 0 170px;
+  }
+
+  .header__inner {
+    max-width: 690px;
+    margin: 51px auto 0;
+  }
+  .home-page__poster {
+    display: none;
+  }
+  .home-page__inner {
+    justify-content: center;
+    padding-top: 170px;
+    .home-page__info-container {
+      max-width: 690px;
+    }
+  }
+
+  .responsive-number {
+    display: block;
+  }
+  .about__info-container {
+    justify-content: space-between;
+  }
+
+  .perfomance-list__swiper {
+    display: block;
+    max-width: 100%;
+  }
+  .perfomance__slides {
+    display: none;
+  }
+
+  .best-year__text {
+    margin-left: 50px;
+    font-size: 29px;
+  }
+  .best-year-bg {
+    max-height: 550px;
+  }
+  .partners {
+    &__logos {
+      min-height: 40px;
+    }
+    .full {
+      display: none;
+    }
+    .swiperLogos {
+      display: flex;
+    }
+  }
+}

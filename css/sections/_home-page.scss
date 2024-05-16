@@ -1,0 +1,91 @@
+.home-page {
+  background-image: url("../images/home-page-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  min-height: 100vh;
+
+  &__inner {
+    min-height: 80vh;
+    @include flex(space-between, flex-end);
+    padding-top: 150px;
+  }
+  h2 {
+    @include font-cond(48px);
+  }
+  p {
+    @include font-reg(14px);
+    letter-spacing: 0;
+  }
+  &__info-container {
+    max-width: 600px;
+    min-height: 447px;
+    @include flex(space-between, flex-start, column);
+  }
+  &__text {
+    @include flex(space-between, center, column);
+    min-height: 233px;
+  }
+  .swiper {
+    padding-right: 25px;
+
+    .swiper-wrapper {
+      max-width: 350px;
+      .swiper-slide {
+        position: relative;
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: rgba(209, 169, 84, 0.85);
+          z-index: 1;
+          opacity: 1;
+          transition: opacity 0.5s ease;
+        }
+
+        &.swiper-slide-active::before {
+          opacity: 0;
+        }
+      }
+    }
+  }
+}
+
+.swiper-button-prev,
+.swiper-button-next,
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  background-image: none;
+  all: unset;
+}
+
+.poster__controls {
+  @include font-cond(16px);
+  @include flex(space-between, center);
+  user-select: none;
+  padding-top: 60px;
+}
+
+.swiper-button-next,
+.swiper-button-prev:not(.swiper-button-disabled) {
+  cursor: pointer;
+}
+
+.next-btn,
+.prev-btn {
+  @include flex(space-between, $ai: center);
+  @include font-cond(16px);
+}
+
+.prev-arrow {
+  transform: rotate(-180deg);
+  padding-left: 10px;
+}
+
+.next-arrow {
+  padding-left: 10px;
+}

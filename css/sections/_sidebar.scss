@@ -1,0 +1,45 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background-color: rgba(51, 51, 51, 0.75);
+  max-width: 150px;
+  @include font-cond(18px, $color-font-grey);
+
+  &__container {
+    padding-top: 37vh;
+    padding-bottom: 86px;
+    height: 100vh;
+    width: 150px;
+    @include flex(space-between, center, column);
+  }
+  &__text {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    min-height: 250px;
+  }
+  &__vr {
+    border: solid 2px $color-font-grey;
+    min-height: 80px;
+    margin: 30px 0;
+  }
+  .icon {
+    height: 26px;
+  }
+
+  .icon:not(:first-child) {
+    margin-top: 30px;
+  }
+
+  svg {
+    opacity: 40%;
+    max-width: 26px;
+    max-height: 26px;
+    fill: white;
+  }
+  svg:hover {
+    opacity: 100%;
+    fill: $color-gold;
+  }
+}

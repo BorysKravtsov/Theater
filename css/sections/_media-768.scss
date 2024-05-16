@@ -1,0 +1,122 @@
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+  .sidebar {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+  .header__navbar-item {
+    display: none;
+  }
+  .header__phone-number {
+    display: block;
+  }
+  .responsive-number {
+    display: none;
+  }
+  .home-page__inner {
+    justify-content: center;
+
+    .home-page__info-container {
+      max-width: 540px;
+    }
+    h2 {
+      font-size: 36px;
+    }
+  }
+  .about__inner {
+    min-height: 634px;
+  }
+  .about__info-container {
+    margin-top: 0;
+    @include flex(flex-end, center, column);
+    p {
+      text-align: center;
+      min-width: 100%;
+    }
+    .about__text {
+      min-width: 100%;
+      @include flex(space-around, center, column);
+    }
+    .about__icons {
+      width: 100%;
+      @include flex(space-around, flex-end);
+      min-height: 140px;
+    }
+  }
+  .title-resp {
+    display: none;
+  }
+  .about__title-resp {
+    display: block;
+  }
+  .best-year__text {
+    margin-left: 20px;
+    font-size: 25px;
+  }
+  .perfomance-list__swiper .swiperP-container {
+    max-width: 510px;
+  }
+  .first-row {
+    margin-top: 115px;
+  }
+  .best-year__stars {
+    max-width: 160px;
+  }
+  .footer {
+    &__container {
+      min-height: 400px;
+      @include flex(space-between, center, column);
+    }
+
+    &__attachment {
+      display: none;
+    }
+
+    &__message {
+      width: 100%;
+      height: 100%;
+      margin-top: 30px;
+      form {
+        height: 100%;
+        @include flex(flex-start, center, column);
+      }
+
+      button {
+        margin-top: 40px;
+      }
+
+      textarea {
+        min-width: 100%;
+        height: 100px;
+      }
+    }
+
+    &__data {
+      @include flex(space-between, flex-start, column);
+      min-width: 100%;
+      flex-wrap: wrap;
+
+      form {
+        height: 100%;
+        width: 100%;
+        @include flex(space-between, flex-end);
+        flex-wrap: wrap;
+      }
+
+      input {
+        min-width: 45%;
+      }
+    }
+
+    &__attachment-mobile {
+      display: block;
+      text-align: center;
+      max-width: 100%;
+      min-width: 1px;
+    }
+  }
+}

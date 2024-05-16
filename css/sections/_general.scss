@@ -1,0 +1,38 @@
+body {
+  overflow-x: hidden;
+  @include font-cond();
+  position: relative;
+  background-color: $bg-color;
+}
+body.lock-scroll {
+  overflow: hidden;
+}
+
+button {
+  padding: 18px 50px;
+  @include font-cond();
+  background-color: $color-gold;
+  border: none;
+  line-height: 80%;
+  cursor: pointer;
+}
+
+.title {
+  @include font-cond(64px);
+  text-align: center;
+  margin-top: 160px;
+  span {
+    color: $color-gold;
+  }
+}
+
+.links {
+  font-size: 16px;
+}
+
+.container {
+  margin: 0 auto;
+
+  max-width: 1140px;
+  padding: 0 20px;
+}

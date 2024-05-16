@@ -1,0 +1,31 @@
+.best-year {
+  max-width: 1100px;
+  margin: 0 auto;
+  margin-top: 75px;
+  &__dates {
+    @include font-cond(72px, $color-gold);
+    letter-spacing: 0.1em;
+    line-height: 136%;
+  }
+
+  &__bg {
+    background-image: url("../images/best-year-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 600px;
+    padding-top: 200px;
+    @include flex(center, baseline);
+    margin: auto 0;
+  }
+
+  &__text {
+    @include flex(flex-start, flex-start, column);
+    @include font-bold();
+    max-width: 426px;
+    margin-left: 100px;
+    img {
+      margin-bottom: 40px;
+    }
+  }
+}

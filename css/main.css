@@ -31,6 +31,10 @@ body {
   background-color: #333333;
 }
 
+body.lock-scroll {
+  overflow: hidden;
+}
+
 button {
   padding: 18px 50px;
   font-family: "condensed", sans-serif;
@@ -41,6 +45,7 @@ button {
   background-color: #D1A954;
   border: none;
   line-height: 80%;
+  cursor: pointer;
 }
 
 .title {
@@ -64,6 +69,56 @@ button {
   margin: 0 auto;
   max-width: 1140px;
   padding: 0 20px;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background-color: rgba(51, 51, 51, 0.75);
+  max-width: 150px;
+  font-family: "condensed", sans-serif;
+  color: #989898;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.sidebar__container {
+  padding-top: 37vh;
+  padding-bottom: 86px;
+  height: 100vh;
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.sidebar__text {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  min-height: 250px;
+}
+.sidebar__vr {
+  border: solid 2px #989898;
+  min-height: 80px;
+  margin: 30px 0;
+}
+.sidebar .icon {
+  height: 26px;
+}
+.sidebar .icon:not(:first-child) {
+  margin-top: 30px;
+}
+.sidebar svg {
+  opacity: 40%;
+  max-width: 26px;
+  max-height: 26px;
+  fill: white;
+}
+.sidebar svg:hover {
+  opacity: 100%;
+  fill: #D1A954;
 }
 
 .header {
@@ -94,6 +149,12 @@ button {
   letter-spacing: 0.05em;
   padding-bottom: 6px;
 }
+.header li:hover {
+  color: #D1A954;
+}
+.header a:hover {
+  border-color: white;
+}
 
 .responsive-number {
   display: none;
@@ -115,10 +176,11 @@ button {
   background-color: #333333;
   transform: translateX(-100%);
   transition: transform 0.5s ease;
+  overflow-y: auto;
 }
 .menu ul {
   list-style: none;
-  padding: 0;
+  padding: 90px 0 0 40px;
   margin: 0;
 }
 .menu ul li a {
@@ -359,6 +421,7 @@ button {
 }
 
 .perfomance__slides {
+  padding-left: 150px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -688,6 +751,20 @@ button {
   line-height: 150%;
 }
 
+@media (max-width: 1440px) {
+  .container {
+    padding: 0 20px 0 170px;
+  }
+  .header__phone-number {
+    display: none;
+  }
+  .header ul {
+    min-width: 100%;
+  }
+  .header .responsive-number {
+    display: block;
+  }
+}
 @media (max-width: 1130px) {
   .about__image {
     display: none;
@@ -727,10 +804,7 @@ button {
     letter-spacing: 0.1em;
   }
   .container {
-    max-width: 730px;
-  }
-  .header__phone-number {
-    display: none;
+    padding: 0 20px 0 170px;
   }
   .header__inner {
     max-width: 690px;
@@ -777,6 +851,12 @@ button {
   }
 }
 @media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+  .sidebar {
+    display: none;
+  }
   .hamburger {
     display: block;
   }

@@ -1,0 +1,47 @@
+.about {
+  &__inner {
+    min-height: 609px;
+    p {
+      @include font-reg(14px);
+      max-width: 445px;
+    }
+    @include flex(flex-end, center, column);
+  }
+
+  &__info-container {
+    margin-top: 100px;
+    @include flex(space-between, flex-start);
+    width: 100%;
+    .icons__text {
+      @include font-cond(16px);
+      span {
+        color: $color-gold;
+      }
+    }
+  }
+
+  &__icons,
+  &__text {
+    @include flex(space-between, flex-start, column);
+    min-height: 292px;
+  }
+
+  &__text {
+    p {
+      padding-bottom: 15px;
+    }
+  }
+
+  &__title {
+    padding-top: 10;
+    @include font-cond(21px);
+  }
+
+  &__title-resp {
+    display: none;
+  }
+}
+
+.icons__text {
+  margin-top: 15px;
+}

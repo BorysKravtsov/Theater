@@ -1,0 +1,135 @@
+.perfomance-list {
+  &__inner {
+    min-height: 865px;
+    @include flex(space-between, center, column);
+    .title {
+      margin-top: 150px;
+    }
+  }
+}
+
+.perfomance__slides {
+  padding-left: 150px;
+  @include flex(flex-end, center);
+  width: 100vw;
+}
+
+.slide {
+  width: 442px;
+  height: 550px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  overflow: hidden;
+
+  &:hover .background::before {
+    background-color: rgba(51, 51, 51, 0);
+  }
+
+  &:hover .background {
+    transform: scale(1.2);
+  }
+
+  &:hover &__title,
+  &:hover &__date {
+    display: none;
+  }
+
+  &-link {
+    //иконка поиска
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    transform: translate(-50%, -50%) scale(0);
+    background-image: url("../images/find-icon.svg");
+    background-size: cover;
+    transition: transform 0.5s ease;
+    z-index: 2;
+  }
+
+  &:hover &-link {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  &__title {
+    @include font-cond(24px);
+    z-index: 2;
+    padding: 40px;
+  }
+
+  &__date {
+    z-index: 2;
+    margin: 31px 40px;
+    transform-origin: left top;
+    transform: rotate(-90deg);
+  }
+}
+
+.nutcracker {
+  .background {
+    background-image: url("../images/slides/slide1.jpg");
+  }
+}
+
+.king-lear {
+  .background {
+    background-image: url("../images/slides/slide2.jpg");
+  }
+}
+
+.cinderella {
+  .background {
+    background-image: url("../images/slides/slide3.jpg");
+  }
+}
+
+.snow-queen {
+  .background {
+    background-image: url("../images/slides/slide4.jpg");
+  }
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center;
+  transition: transform 1s ease;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $color-grey-slide;
+    z-index: 1;
+  }
+}
+
+.perfomance-list__swiper {
+  display: none;
+
+  .swiperP-container {
+    max-width: 690px;
+    overflow: hidden;
+    position: relative;
+  }
+  .swiper-wrapper {
+    width: 100%;
+  }
+  .swiper-slide {
+    max-width: 442px;
+    height: 550px;
+  }
+}

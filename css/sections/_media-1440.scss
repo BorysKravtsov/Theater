@@ -1,0 +1,16 @@
+@media (max-width: 1440px) {
+  .container {
+    padding: 0 20px 0 170px;
+  }
+  .header {
+    &__phone-number {
+      display: none;
+    }
+    ul {
+      min-width: 100%;
+    }
+    .responsive-number {
+      display: block;
+    }
+  }
+}
