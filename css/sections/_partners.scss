@@ -2,6 +2,7 @@
   &__logos {
     margin: 0 auto;
     @include flex(space-between, center);
+    gap: 15px;
     flex-wrap: wrap;
     align-content: space-between;
     min-height: 209px;
@@ -24,12 +25,42 @@
   }
   .first-row,
   .second-row {
-    margin: 0;
+    margin: 0 auto;
   }
   .first-row {
     margin-top: 155px;
   }
   .second-row {
+    margin-top: 100px;
+  }
+}
+@media (max-width: 1440px) {
+  .partners {
+    &__logos {
+      @include flex(space-around, center);
+    }
+  }
+}
+@media (max-width: 1040px) {
+  .partners {
+    &__logos {
+      min-height: 40px;
+    }
+    .full {
+      display: none;
+    }
+    .swiperLogos {
+      display: flex;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .first-row {
+    margin-top: 105px;
+  }
+}
+@media (max-width: 576px) {
+  .first-row {
     margin-top: 100px;
   }
 }

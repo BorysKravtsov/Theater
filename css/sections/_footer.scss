@@ -52,7 +52,7 @@
 
     input {
       outline: none;
-      min-width: 180px;
+      min-width: 47%;
       height: 35px;
       background-color: #444444;
       border: solid 1px #616161;
@@ -67,7 +67,7 @@
 
   &__message {
     height: 100%;
-
+    margin-left: 30px;
     form {
       height: 100%;
       @include flex(space-between, flex-end, column);
@@ -101,6 +101,100 @@
 
     p {
       @include font-reg(12px, $color-font-grey);
+    }
+  }
+}
+@media (max-width: 1440px) {
+  .footer {
+    &__data {
+      input {
+        max-width: 47%;
+      }
+    }
+  }
+}
+@media (max-width: 1130px) {
+  .footer {
+    &__container {
+      max-width: 690px;
+      margin: 80px auto 0;
+    }
+    &__info {
+      display: none;
+    }
+
+    &__message {
+      textarea {
+        min-width: 270px;
+      }
+    }
+    &__info-mobile {
+      max-width: 690px;
+      margin: 80px auto 0;
+      display: grid;
+      row-gap: 25px;
+      grid-template-columns: 2fr 3fr;
+      justify-content: space-between;
+      .website,
+      .adress {
+        text-align: right;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .footer {
+    &__container {
+      min-height: 400px;
+      @include flex(space-between, center, column);
+    }
+
+    &__attachment {
+      display: none;
+    }
+
+    &__message {
+      width: 100%;
+      height: 100%;
+      margin-top: 30px;
+      margin-left: 0;
+      form {
+        height: 100%;
+        @include flex(flex-start, center, column);
+      }
+
+      button {
+        margin-top: 40px;
+      }
+
+      textarea {
+        min-width: 100%;
+        height: 100px;
+      }
+    }
+
+    &__data {
+      @include flex(space-between, flex-start, column);
+      min-width: 100%;
+      flex-wrap: wrap;
+
+      form {
+        height: 100%;
+        width: 100%;
+        @include flex(space-between, flex-end);
+        flex-wrap: wrap;
+      }
+
+      input {
+        min-width: 45%;
+      }
+    }
+
+    &__attachment-mobile {
+      display: block;
+      text-align: center;
+      max-width: 100%;
+      min-width: 1px;
     }
   }
 }

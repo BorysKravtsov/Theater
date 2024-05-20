@@ -29,3 +29,47 @@
     }
   }
 }
+@media (max-width: 1440px) {
+  .best-year {
+    &__bg {
+      padding-left: 150px;
+    }
+  }
+}
+@media (max-width: 1040px) {
+  .best-year {
+    &__bg {
+      padding-top: 0;
+      align-items: center;
+      min-height: 510px;
+    }
+    &__text {
+      margin-left: 50px;
+      font-size: 29px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .best-year {
+    &__bg {
+      padding-left: 0;
+    }
+    &__text {
+      margin-left: 20px;
+      font-size: 25px;
+    }
+    &__stars {
+      max-width: 160px;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .best-year {
+    &__dates {
+      font-size: 56px;
+    }
+    &__text {
+      font-size: 18px;
+    }
+  }
+}

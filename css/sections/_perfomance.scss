@@ -4,6 +4,7 @@
     @include flex(space-between, center, column);
     .title {
       margin-top: 150px;
+      padding-left: 170px;
     }
   }
 }
@@ -119,6 +120,7 @@
 
 .perfomance-list__swiper {
   display: none;
+  padding-left: 150px;
 
   .swiperP-container {
     max-width: 690px;
@@ -131,5 +133,28 @@
   .swiper-slide {
     max-width: 442px;
     height: 550px;
+  }
+}
+@media (max-width: 1040px) {
+  .perfomance-list__swiper {
+    display: block;
+    max-width: 100%;
+  }
+  .perfomance__slides {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .perfomance-list {
+    .title {
+      padding-left: 0;
+      margin-top: 116px;
+    }
+    &__swiper {
+      padding-left: 0;
+      .swiperP-container {
+        max-width: 510px;
+      }
+    }
   }
 }

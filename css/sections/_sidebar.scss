@@ -8,11 +8,10 @@
   @include font-cond(18px, $color-font-grey);
 
   &__container {
-    padding-top: 37vh;
-    padding-bottom: 86px;
+    padding-top: 160px;
     height: 100vh;
     width: 150px;
-    @include flex(space-between, center, column);
+    @include flex(center, center, column);
   }
   &__text {
     writing-mode: vertical-lr;
@@ -41,5 +40,10 @@
   svg:hover {
     opacity: 100%;
     fill: $color-gold;
+  }
+}
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
   }
 }
