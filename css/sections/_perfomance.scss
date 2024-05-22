@@ -47,7 +47,7 @@
     width: 100px;
     height: 100px;
     transform: translate(-50%, -50%) scale(0);
-    background-image: url("../images/find-icon.svg");
+    background-image: url('../images/find-icon.svg');
     background-size: cover;
     transition: transform 0.5s ease;
     z-index: 2;
@@ -73,25 +73,25 @@
 
 .nutcracker {
   .background {
-    background-image: url("../images/slides/slide1.jpg");
+    background-image: url('../images/slides/slide1.jpg');
   }
 }
 
 .king-lear {
   .background {
-    background-image: url("../images/slides/slide2.jpg");
+    background-image: url('../images/slides/slide2.jpg');
   }
 }
 
 .cinderella {
   .background {
-    background-image: url("../images/slides/slide3.jpg");
+    background-image: url('../images/slides/slide3.jpg');
   }
 }
 
 .snow-queen {
   .background {
-    background-image: url("../images/slides/slide4.jpg");
+    background-image: url('../images/slides/slide4.jpg');
   }
 }
 
@@ -107,7 +107,7 @@
   z-index: 1;
 
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 0;

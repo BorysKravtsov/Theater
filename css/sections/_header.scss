@@ -1,15 +1,21 @@
 .header {
-  position: absolute;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+  background: transparent;
 
   &__inner {
-    @include flex(space-between);
+    display: flex;
+    justify-content: space-between;
     margin-top: 50px;
     .header__navbar-items {
-      @include flex(space-between);
+      display: flex;
+      justify-content: space-between;
       max-width: 822px;
     }
-
     nav {
       width: 100%;
     }
@@ -22,18 +28,30 @@
     letter-spacing: 0.05em;
     padding-bottom: 6px;
   }
+
   li:hover {
     color: $color-gold;
   }
+
   a:hover {
     border-color: white;
+  }
+
+  &.scrolled {
+    background-color: $bg-color;
+    max-width: 100%;
+    height: 124px;
   }
 }
 
 .responsive-number {
   display: none;
-  max-width: 140px;
-  margin: 50px auto 0;
+  position: absolute;
+  max-width: 139px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 124px;
+  left: 50%;
 }
 
 .hamburger {
@@ -76,7 +94,10 @@
     border-bottom: none;
   }
   &__container {
-    @include flex(space-evenly, center, column);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
     height: 100vh;
   }
 }
@@ -110,11 +131,12 @@
     ul {
       min-width: 100%;
     }
-    .responsive-number {
-      display: block;
-    }
+  }
+  .responsive-number {
+    display: block;
   }
 }
+
 @media (max-width: 1040px) {
   .header {
     &__inner {
@@ -124,12 +146,15 @@
     &__navbar-item {
       font-size: 15px;
     }
+    &.scrolled {
+      height: 120px;
+    }
   }
-
   .responsive-number {
     display: block;
   }
 }
+
 @media (max-width: 768px) {
   .hamburger {
     display: block;
@@ -141,8 +166,11 @@
     &__phone-number {
       display: block;
     }
-    .responsive-number {
-      display: none;
+    &.scrolled {
+      height: 124px;
     }
+  }
+  .responsive-number {
+    display: none;
   }
 }

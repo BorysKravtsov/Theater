@@ -1,16 +1,16 @@
 @font-face {
-  font-family: "condensed";
-  src: url("../fonts/OpenSansCondensed-Bold.woff") format("woff");
+  font-family: 'condensed';
+  src: url('../fonts/OpenSansCondensed-Bold.woff') format('woff');
 }
 @font-face {
-  font-family: "regular";
-  src: url("../fonts/OpenSans-Regular.woff2") format("woff2");
+  font-family: 'regular';
+  src: url('../fonts/OpenSans-Regular.woff2') format('woff2');
 }
 @font-face {
-  font-family: "bold";
-  src: url("../fonts/OpenSans-Bold.woff2") format("woff2");
+  font-family: 'bold';
+  src: url('../fonts/OpenSans-Bold.woff2') format('woff2');
 }
 @font-face {
-  font-family: "semi-bold";
-  src: url("../fonts/OpenSans-SemiBold.woff2") format("woff2");
-}/*# sourceMappingURL=mixins.css.map */
+  font-family: 'semi-bold';
+  src: url('../fonts/OpenSans-SemiBold.woff2') format('woff2');
+} /*# sourceMappingURL=mixins.css.map */

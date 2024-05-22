@@ -1,5 +1,5 @@
 .home-page {
-  background-image: url("../images/home-page-bg.jpg");
+  background-image: url('../images/home-page-bg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -38,7 +38,7 @@
         position: relative;
 
         &::before {
-          content: "";
+          content: '';
           position: absolute;
           top: 0;
           left: 0;
