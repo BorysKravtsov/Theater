@@ -14,9 +14,9 @@ const swiper = new Swiper('.swiper', {
 });
 const swiperP = new Swiper('.swiperP-container', {
   parallax: true,
-  centeredSlides: false,
+
   slidesPerView: 1.64,
-  slidesPerGroup: 1,
+
   loop: true,
   loopFillGroupWithBlank: true,
   mousewheel: {
