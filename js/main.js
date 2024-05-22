@@ -12,11 +12,26 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.swiper-button-prev'
   }
 });
+
+function duplicateSlides(containerSelector, minSlides) {
+  const container = document.querySelector(containerSelector);
+  const slides = container.querySelectorAll('.swiper-slide');
+
+  if (slides.length < minSlides) {
+    for (let i = slides.length; i < minSlides; i++) {
+      const clone = slides[i % slides.length].cloneNode(true);
+      container.querySelector('.swiper-wrapper').appendChild(clone);
+    }
+  }
+}
+
+duplicateSlides('.swiperP-container', 4);
+
 const swiperP = new Swiper('.swiperP-container', {
   parallax: true,
-
+  centeredSlides: false,
   slidesPerView: 1.64,
-
+  slidesPerGroup: 1,
   loop: true,
   loopFillGroupWithBlank: true,
   mousewheel: {
