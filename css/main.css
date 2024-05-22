@@ -169,7 +169,9 @@ button {
   margin-top: 50px;
 }
 .header__inner .header__navbar-items {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  gap: 10px;
   justify-content: space-between;
   max-width: 822px;
 }
@@ -274,8 +276,9 @@ button {
   .header__phone-number {
     display: none;
   }
-  .header ul {
-    min-width: 100%;
+  .header__inner .header__navbar-items {
+    margin: 0 auto;
+    max-width: 100%;
   }
   .responsive-number {
     display: block;
